@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+  font-family: Inter, sans-serif;
+  background: #0d0f0d;
+}
+
+.slider-section {
+  padding: 60px 40px;
+  text-align: center;
+}
+
+.slider-title {
+  font-size: 64px;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 50px;
+}
+
+.slider-title span {
+  color: #59ff75;
+}
+
+.card-slider {
+  display: flex;
+  gap: 40px;
+  overflow-x: auto;
+  padding: 20px 0 80px 0;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none;
+}
+
+.card-slider::-webkit-scrollbar {
+  display: none;
+}
+
+.card {
+  min-width: 270px;
+  background: #b3ff4a;
+  border-radius: 24px;
+  padding: 30px;
+  box-shadow: 0px 20px 40px rgba(0,0,0,0.18);
+  scroll-snap-align: start;
+  transform-origin: center;
+  transition: 0.3s ease;
+}
+
+.card p {
+  font-size: 16px;
+  line-height: 24px;
+  color: #1c1c1c;
+}
+
+.profile {
+  margin-top: 25px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.profile img {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+
+.profile h4 {
+  margin: 0;
+}
+
+.profile span {
+  font-size: 13px;
+  color: #4f4f4f;
+}
+
+/* Rotations for stacked effect */
+.rotate-1 { transform: rotate(-8deg); }
+.rotate-2 { transform: rotate(0deg); background: #05a2f0; }
+.rotate-3 { transform: rotate(6deg); background: #f55d05; }
+.rotate-4 { transform: rotate(-4deg); background: #efcc02; }
+
+/* Hover animation */
+.card:hover {
+  transform: translateY(-12px) scale(1.05) rotate(0deg) !important;
+  box-shadow: 0px 30px 60px rgba(0,0,0,0.25);
+}
