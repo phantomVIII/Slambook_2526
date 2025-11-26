@@ -1,5 +1,6 @@
-const correctUsername = "admin";
-        const correctPassword = "12345";
+const correctUsername = "AURA";
+        const correctPassword = "V3l0ciTy@N3xus#49!$
+";
 
         function login() {
             const username = document.getElementById("username").value;
@@ -11,4 +12,5 @@ const correctUsername = "admin";
             } else {
                 errorMsg.style.display = "block";
             }
+
         }
