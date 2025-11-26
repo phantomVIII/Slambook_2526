@@ -1,5 +1,5 @@
 const correctUsername = "AURA";
-        const correctPassword = "Velocity#Drift$2025";
+        const correctPassword = "V3l0ciTy@N3xus#49!$";
 
         function login() {
             const username = document.getElementById("username").value;
@@ -13,3 +13,4 @@ const correctUsername = "AURA";
             }
 
         }
+
